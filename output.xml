@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.3 on linux)" generated="2024-07-31T21:05:37.784378" rpa="false" schemaversion="5">
-<suite id="s1" name="Default" source="/home/arjay-dev/Documents/automation/playground-1/players-activity/default.robot">
+<robot generator="Robot 7.0.1 (Python 3.12.3 on linux)" generated="2024-07-31T21:09:28.532980" rpa="false" schemaversion="5">
+<suite id="s1" name="Default" source="/home/arjay-dev/Documents/automation/playground-1/operators-activity/default.robot">
 <kw name="Start Test" type="SETUP">
 <kw name="Login" owner="login">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:37.888213" level="INFO">Opening browser 'Chrome' to base url 'https://bo-dev.qtplatform.com/client/'.</msg>
+<msg time="2024-07-31T21:09:28.635839" level="INFO">Opening browser 'Chrome' to base url 'https://bo-dev.qtplatform.com/client/'.</msg>
 <arg>${BO_URL}</arg>
 <arg>${BROWSER}</arg>
 <arg>options= ${OPTIONS}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-31T21:05:37.887994" elapsed="3.077123"/>
+<status status="PASS" start="2024-07-31T21:09:28.635626" elapsed="2.553435"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-31T21:05:40.965290" elapsed="0.013813"/>
+<status status="PASS" start="2024-07-31T21:09:31.189231" elapsed="0.013926"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>class:login</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-31T21:05:40.979274" elapsed="0.013724"/>
+<status status="PASS" start="2024-07-31T21:09:31.203323" elapsed="0.015448"/>
 </kw>
 <kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:40.997555" level="INFO">${form} = &lt;selenium.webdriver.remote.webelement.WebElement (session="dc5b64816e20b1b90e23096b2bcc3c95", element="f.EF0CFA707C7065ABD181E1749E8A08CC.d.EF61EF44436C6BAB83CFA6D90B4A7B2E.e.14")&gt;</msg>
+<msg time="2024-07-31T21:09:31.222800" level="INFO">${form} = &lt;selenium.webdriver.remote.webelement.WebElement (session="16d40f31a93936dcb424a27cf78699e6", element="f.F73BC10867A6BC84B50EE7F748C3441A.d.1A4C8BDCDFDF7A622AE1A0002321AE74.e.12")&gt;</msg>
 <var>${form}</var>
 <arg>class:login</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:40.993151" elapsed="0.004444"/>
+<status status="PASS" start="2024-07-31T21:09:31.218917" elapsed="0.003920"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:40.997879" level="INFO">Typing text 'qt_qaall' into text field 'id:username'.</msg>
+<msg time="2024-07-31T21:09:31.223109" level="INFO">Typing text 'qt_qaall' into text field 'id:username'.</msg>
 <arg>id:username</arg>
 <arg>qt_qaall</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:40.997732" elapsed="0.057682"/>
+<status status="PASS" start="2024-07-31T21:09:31.222965" elapsed="0.058607"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:41.055703" level="INFO">Typing text '123456' into text field 'id:password'.</msg>
+<msg time="2024-07-31T21:09:31.281855" level="INFO">Typing text '123456' into text field 'id:password'.</msg>
 <arg>id:password</arg>
 <arg>123456</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:41.055560" elapsed="0.044772"/>
+<status status="PASS" start="2024-07-31T21:09:31.281714" elapsed="0.043362"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:41.100618" level="INFO">Clicking element 'css:.login .btn'.</msg>
+<msg time="2024-07-31T21:09:31.325364" level="INFO">Clicking element 'css:.login .btn'.</msg>
 <arg>css:.login .btn</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:41.100479" elapsed="0.029367"/>
+<status status="PASS" start="2024-07-31T21:09:31.325219" elapsed="0.028652"/>
 </kw>
-<status status="PASS" start="2024-07-31T21:05:37.887551" elapsed="3.242421"/>
+<status status="PASS" start="2024-07-31T21:09:28.635205" elapsed="2.718795"/>
 </kw>
-<status status="PASS" start="2024-07-31T21:05:37.887305" elapsed="3.242731"/>
+<status status="PASS" start="2024-07-31T21:09:28.634971" elapsed="2.719120"/>
 </kw>
 <test id="s1-t1" name="Open Provider Page" line="16">
 <kw name="Sidebar Navigate" owner="navigation">
@@ -58,258 +58,132 @@
 <arg>class:navlist</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-31T21:05:41.130828" elapsed="2.579085"/>
+<status status="PASS" start="2024-07-31T21:09:31.354993" elapsed="1.349365"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:43.710241" level="INFO">Clicking element 'css:.navlist &gt; div:nth-child(3) .btn-menu-main'.</msg>
+<msg time="2024-07-31T21:09:32.704678" level="INFO">Clicking element 'css:.navlist &gt; div:nth-child(3) .btn-menu-main'.</msg>
 <arg>css:.navlist &gt; div:nth-child(${navLocator}) .btn-menu-main</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:43.710060" elapsed="0.038365"/>
+<status status="PASS" start="2024-07-31T21:09:32.704506" elapsed="0.037630"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-31T21:05:44.748770" level="INFO">Slept 1 second.</msg>
+<msg time="2024-07-31T21:09:33.742481" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-31T21:05:43.748570" elapsed="1.000281"/>
+<status status="PASS" start="2024-07-31T21:09:32.742280" elapsed="1.000281"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:44.749183" level="INFO">Clicking element 'css:.navlist div:nth-child(3) .collapse.show .MuiList-root div:nth-child(3)'.</msg>
+<msg time="2024-07-31T21:09:33.742884" level="INFO">Clicking element 'css:.navlist div:nth-child(3) .collapse.show .MuiList-root div:nth-child(4)'.</msg>
 <arg>css:.navlist div:nth-child(${subNavListLocator}) .collapse.show .MuiList-root div:nth-child(${subNavListItemLocator})</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:44.748988" elapsed="0.039734"/>
+<status status="PASS" start="2024-07-31T21:09:33.742697" elapsed="0.043751"/>
 </kw>
 <arg>3</arg>
 <arg>3</arg>
-<arg>3</arg>
-<status status="PASS" start="2024-07-31T21:05:41.130496" elapsed="3.658343"/>
+<arg>4</arg>
+<status status="PASS" start="2024-07-31T21:09:31.354632" elapsed="2.431906"/>
 </kw>
-<status status="PASS" start="2024-07-31T21:05:41.130107" elapsed="3.658901"/>
+<status status="PASS" start="2024-07-31T21:09:31.354191" elapsed="2.432509"/>
 </test>
 <test id="s1-t2" name="Select Last 7 Days Quicklinks" line="19">
 <kw name="Select Quicklinks" owner="quicklinks">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>class:mui-search-bar-wrapper</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-31T21:05:44.789708" elapsed="1.442038"/>
+<status status="PASS" start="2024-07-31T21:09:33.787431" elapsed="1.287319"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-31T21:05:47.232192" level="INFO">Slept 1 second.</msg>
+<msg time="2024-07-31T21:09:36.075165" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-31T21:05:46.231883" elapsed="1.000393"/>
+<status status="PASS" start="2024-07-31T21:09:35.074885" elapsed="1.000363"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:47.232630" level="INFO">Clicking element 'css:.date-quick-links button:nth-child(6)'.</msg>
+<msg time="2024-07-31T21:09:36.075552" level="INFO">Clicking element 'css:.date-quick-links button:nth-child(6)'.</msg>
 <arg>css:.date-quick-links button:nth-child(${quicklinkItemLocator})</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:47.232453" elapsed="0.051205"/>
+<status status="PASS" start="2024-07-31T21:09:36.075385" elapsed="0.061505"/>
 </kw>
 <arg>6</arg>
-<status status="PASS" start="2024-07-31T21:05:44.789488" elapsed="2.494259"/>
+<status status="PASS" start="2024-07-31T21:09:33.787199" elapsed="2.349779"/>
 </kw>
-<status status="PASS" start="2024-07-31T21:05:44.789209" elapsed="2.494684"/>
+<status status="PASS" start="2024-07-31T21:09:33.786925" elapsed="2.350198"/>
 </test>
 <test id="s1-t3" name="Select Operators Dropdown" line="22">
 <kw name="Select Dropdown" owner="dropdown">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>class:mui-search-bar-wrapper</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-31T21:05:47.284568" elapsed="0.007059"/>
+<status status="PASS" start="2024-07-31T21:09:36.137811" elapsed="0.007624"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-31T21:05:48.292035" level="INFO">Slept 1 second.</msg>
+<msg time="2024-07-31T21:09:37.145889" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-31T21:05:47.291745" elapsed="1.000368"/>
+<status status="PASS" start="2024-07-31T21:09:36.145584" elapsed="1.000381"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:48.292441" level="INFO">Clicking element 'css:#mui-dp-id-operators-input .MuiFormControl-root .MuiInputBase-root'.</msg>
+<msg time="2024-07-31T21:09:37.146277" level="INFO">Clicking element 'css:#mui-dp-id-operator .MuiFormControl-root .MuiInputBase-root'.</msg>
 <arg>css:${dropdownParentLocator} .MuiFormControl-root .MuiInputBase-root</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:48.292254" elapsed="0.062470"/>
+<status status="PASS" start="2024-07-31T21:09:37.146102" elapsed="0.076102"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>class:base-Popper-root</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-31T21:05:48.354889" elapsed="0.624401"/>
+<status status="PASS" start="2024-07-31T21:09:37.222354" elapsed="0.624247"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-31T21:05:49.979734" level="INFO">Slept 1 second.</msg>
+<msg time="2024-07-31T21:09:38.847041" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-31T21:05:48.979433" elapsed="1.000376"/>
+<status status="PASS" start="2024-07-31T21:09:37.846738" elapsed="1.000381"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:49.980134" level="INFO">Clicking element 'css:.base-Popper-root div[data-test-id="virtuoso-item-list"] div:nth-child(1)'.</msg>
+<msg time="2024-07-31T21:09:38.847497" level="INFO">Clicking element 'css:.base-Popper-root div[data-test-id="virtuoso-item-list"] div:nth-child(1)'.</msg>
 <arg>css:.base-Popper-root div[data-test-id="virtuoso-item-list"] div:nth-child(${dropdownItemLocator})</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:49.979946" elapsed="0.041462"/>
+<status status="PASS" start="2024-07-31T21:09:38.847257" elapsed="0.045545"/>
 </kw>
-<arg>\#mui-dp-id-operators-input</arg>
+<arg>\#mui-dp-id-operator</arg>
 <arg>1</arg>
-<status status="PASS" start="2024-07-31T21:05:47.284332" elapsed="2.737162"/>
+<status status="PASS" start="2024-07-31T21:09:36.137576" elapsed="2.755312"/>
 </kw>
-<status status="PASS" start="2024-07-31T21:05:47.284067" elapsed="2.737576"/>
+<status status="PASS" start="2024-07-31T21:09:36.137296" elapsed="2.755727"/>
 </test>
-<test id="s1-t4" name="Select Currencies Dropdown" line="25">
-<kw name="Select Dropdown" owner="dropdown">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:mui-search-bar-wrapper</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-31T21:05:50.022357" elapsed="0.008020"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-31T21:05:51.030899" level="INFO">Slept 1 second.</msg>
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-31T21:05:50.030575" elapsed="1.000402"/>
-</kw>
+<test id="s1-t4" name="Request View" line="25">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:51.031293" level="INFO">Clicking element 'css:#mui-dp-id-currencies-input .MuiFormControl-root .MuiInputBase-root'.</msg>
-<arg>css:${dropdownParentLocator} .MuiFormControl-root .MuiInputBase-root</arg>
+<msg time="2024-07-31T21:09:38.893537" level="INFO">Clicking element 'css:.mui-search-bar-wrapper .mui-search-bar-row &gt; em:nth-child(4) .MuiButtonBase-root'.</msg>
+<arg>css:.mui-search-bar-wrapper .mui-search-bar-row &gt; em:nth-child(4) .MuiButtonBase-root</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:51.031113" elapsed="0.051258"/>
+<status status="PASS" start="2024-07-31T21:09:38.893405" elapsed="0.058717"/>
 </kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:base-Popper-root</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-31T21:05:51.082520" elapsed="0.620601"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-31T21:05:52.703496" level="INFO">Slept 1 second.</msg>
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-31T21:05:51.703258" elapsed="1.000325"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:52.703917" level="INFO">Clicking element 'css:.base-Popper-root div[data-test-id="virtuoso-item-list"] div:nth-child(1)'.</msg>
-<arg>css:.base-Popper-root div[data-test-id="virtuoso-item-list"] div:nth-child(${dropdownItemLocator})</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:52.703725" elapsed="0.036146"/>
-</kw>
-<arg>\#mui-dp-id-currencies-input</arg>
-<arg>1</arg>
-<status status="PASS" start="2024-07-31T21:05:50.022102" elapsed="2.717860"/>
-</kw>
-<status status="PASS" start="2024-07-31T21:05:50.021803" elapsed="2.718295"/>
-</test>
-<test id="s1-t5" name="Select Games Dropdown" line="28">
-<kw name="Select Dropdown" owner="dropdown">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:mui-search-bar-wrapper</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-31T21:05:52.740774" elapsed="0.007362"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-31T21:05:53.748465" level="INFO">Slept 1 second.</msg>
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-31T21:05:52.748264" elapsed="1.000282"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:53.748864" level="INFO">Clicking element 'css:#mui-dp-id-games-input .MuiFormControl-root .MuiInputBase-root'.</msg>
-<arg>css:${dropdownParentLocator} .MuiFormControl-root .MuiInputBase-root</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:53.748685" elapsed="0.053672"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:base-Popper-root</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-31T21:05:53.802505" elapsed="1.650740"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-31T21:05:56.453684" level="INFO">Slept 1 second.</msg>
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-31T21:05:55.453448" elapsed="1.000311"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:56.454073" level="INFO">Clicking element 'css:.base-Popper-root div[data-test-id="virtuoso-item-list"] div:nth-child(1)'.</msg>
-<arg>css:.base-Popper-root div[data-test-id="virtuoso-item-list"] div:nth-child(${dropdownItemLocator})</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:56.453890" elapsed="0.041740"/>
-</kw>
-<arg>\#mui-dp-id-games-input</arg>
-<arg>1</arg>
-<status status="PASS" start="2024-07-31T21:05:52.740542" elapsed="3.755178"/>
-</kw>
-<status status="PASS" start="2024-07-31T21:05:52.740270" elapsed="3.755586"/>
-</test>
-<test id="s1-t6" name="Select Devices Dropdown" line="31">
-<kw name="Select Dropdown" owner="dropdown">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:mui-search-bar-wrapper</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-31T21:05:56.496528" elapsed="0.007935"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-31T21:05:57.504889" level="INFO">Slept 1 second.</msg>
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-31T21:05:56.504593" elapsed="1.000369"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:57.505262" level="INFO">Clicking element 'css:#mui-dp-id-devices-input .MuiFormControl-root .MuiInputBase-root'.</msg>
-<arg>css:${dropdownParentLocator} .MuiFormControl-root .MuiInputBase-root</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:57.505094" elapsed="0.051362"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:base-Popper-root</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-31T21:05:57.556596" elapsed="0.621497"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-31T21:05:59.178461" level="INFO">Slept 1 second.</msg>
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-31T21:05:58.178229" elapsed="1.000307"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:59.178853" level="INFO">Clicking element 'css:.base-Popper-root div[data-test-id="virtuoso-item-list"] div:nth-child(1)'.</msg>
-<arg>css:.base-Popper-root div[data-test-id="virtuoso-item-list"] div:nth-child(${dropdownItemLocator})</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:59.178669" elapsed="0.040143"/>
-</kw>
-<arg>\#mui-dp-id-devices-input</arg>
-<arg>1</arg>
-<status status="PASS" start="2024-07-31T21:05:56.496277" elapsed="2.722623"/>
-</kw>
-<status status="PASS" start="2024-07-31T21:05:56.496017" elapsed="2.723016"/>
-</test>
-<test id="s1-t7" name="Request View" line="34">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-31T21:05:59.219558" level="INFO">Clicking element 'css:.mui-search-bar-wrapper .mui-search-bar-row &gt; em:nth-child(6) .MuiButtonBase-root'.</msg>
-<arg>css:.mui-search-bar-wrapper .mui-search-bar-row &gt; em:nth-child(6) .MuiButtonBase-root</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-31T21:05:59.219424" elapsed="0.048008"/>
-</kw>
-<status status="PASS" start="2024-07-31T21:05:59.219195" elapsed="0.048400"/>
+<status status="PASS" start="2024-07-31T21:09:38.893181" elapsed="0.059113"/>
 </test>
 <kw name="End Test" type="TEARDOWN">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-31T21:06:04.268457" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-07-31T21:09:43.953214" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-31T21:05:59.268166" elapsed="5.000371"/>
+<status status="PASS" start="2024-07-31T21:09:38.952884" elapsed="5.000411"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-07-31T21:06:04.268666" elapsed="0.079196"/>
+<status status="PASS" start="2024-07-31T21:09:43.953437" elapsed="0.379050"/>
 </kw>
-<status status="PASS" start="2024-07-31T21:05:59.268008" elapsed="5.079949"/>
+<status status="PASS" start="2024-07-31T21:09:38.952718" elapsed="5.379855"/>
 </kw>
-<doc>Players Activity Test Case</doc>
-<status status="PASS" start="2024-07-31T21:05:37.785140" elapsed="26.562866"/>
+<doc>Operators Activity Test Case</doc>
+<status status="PASS" start="2024-07-31T21:09:28.533553" elapsed="15.799058"/>
 </suite>
 <statistics>
 <total>
-<stat pass="7" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="7" fail="0" skip="0" id="s1" name="Default">Default</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="Default">Default</stat>
 </suite>
 </statistics>
 <errors>
