@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Games Activity Test Case
+Documentation    Players Activity Test Case
 Library    SeleniumLibrary
 
 Resource    ../resource/login.resource
@@ -14,7 +14,7 @@ Suite Teardown    End Test
 
 *** Test Cases ***
 Open Provider Page
-    Sidebar Navigate    3    3    2
+    Sidebar Navigate    3    3    3
 
 Select Last 7 Days Quicklinks
     Select Quicklinks    6
@@ -25,8 +25,8 @@ Select Operators Dropdown
 Select Currencies Dropdown
     Select Dropdown    \#mui-dp-id-currencies-input    1
 
-Select Providers Dropdown
-    Select Dropdown    \#mui-dp-id-provider-input    1
+Select Games Dropdown
+    Select Dropdown    \#mui-dp-id-games-input    1
 
 Select Devices Dropdown
     Select Dropdown    \#mui-dp-id-devices-input    1
